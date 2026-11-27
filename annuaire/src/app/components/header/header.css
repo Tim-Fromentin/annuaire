@@ -1,0 +1,13 @@
+/* Bandeau bleu foncé sur toute la largeur */
+header {
+  background-color: #1e3a5f;
+  color: #ffffff;
+  padding: 16px 32px;
+}
+
+/* Titre blanc, en gras, sans la marge par défaut du h1 */
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  font-weight: 700;
+}
