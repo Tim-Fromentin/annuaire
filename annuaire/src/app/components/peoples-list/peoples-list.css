@@ -1,0 +1,12 @@
+/* Marge autour du contenu, alignée sur le padding du header */
+:host {
+  display: block;
+  padding: 24px 32px;
+}
+
+/* Grille de cartes : autant de colonnes que la largeur le permet */
+.people-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 16px;
+}

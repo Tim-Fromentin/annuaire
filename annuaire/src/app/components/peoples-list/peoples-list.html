@@ -1,0 +1,11 @@
+@if (isLoading()) {
+  <p>Chargement de l'annuaire…</p>
+} @else if (errorMessage(); as message) {
+  <p>{{ message }}</p>
+} @else {
+  <section class="people-list">
+    @for (people of peoples(); track `${people.login.uuid}-${$index}`) {
+      <app-people-card [people]="people" />
+    }
+  </section>
+}
