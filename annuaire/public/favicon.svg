@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <!-- Couverture du carnet -->
+  <rect x="10" y="4" width="44" height="56" rx="6" fill="#3f51b5"/>
+  <!-- Reliure à gauche -->
+  <rect x="10" y="4" width="8" height="56" rx="3" fill="#283593"/>
+  <!-- Onglets alphabétiques à droite -->
+  <rect x="54" y="12" width="5" height="9" rx="2" fill="#ffb300"/>
+  <rect x="54" y="27" width="5" height="9" rx="2" fill="#26a69a"/>
+  <rect x="54" y="42" width="5" height="9" rx="2" fill="#ef5350"/>
+  <!-- Silhouette du contact : tête puis buste -->
+  <circle cx="36" cy="25" r="8" fill="#ffffff"/>
+  <path d="M22 48c0-8 6.3-13 14-13s14 5 14 13z" fill="#ffffff"/>
+</svg>
