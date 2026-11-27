@@ -11,3 +11,8 @@ h1 {
   font-size: 1.75rem;
   font-weight: 700;
 }
+
+/* Le nombre de personnes collé sous le titre */
+p {
+  margin: 0;
+}

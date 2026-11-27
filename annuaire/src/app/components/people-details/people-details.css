@@ -1,0 +1,10 @@
+/* Marge autour de la fiche, la même que pour la liste */
+.people-details {
+  padding: 24px 32px;
+}
+
+/* Le lien de retour garde le style par défaut, avec un espace en dessous */
+.people-details > a {
+  display: inline-block;
+  margin-bottom: 16px;
+}

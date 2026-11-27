@@ -1,0 +1,39 @@
+/* Carte blanche, plus large que celles de la liste, sans s'étirer sur tout l'écran */
+.people-card-detail {
+  max-width: 480px;
+  padding: 24px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12);
+}
+
+/* Grande photo ronde */
+.people-card-detail img {
+  width: 128px;
+  height: 128px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+/* Nom en gras, plus grand que sur les cartes */
+.people-card-detail h3 {
+  margin: 16px 0;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Liste sans puces ni retrait */
+.people-card-detail ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Chaque ligne : le libellé dans une colonne fixe, la valeur à côté */
+.people-card-detail li {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  padding: 2px 0;
+  color: #111827;
+}
