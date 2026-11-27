@@ -1,0 +1,29 @@
+<div class="people-card-detail">
+      <img [src]="people().picture.large" />
+  <h3>
+    {{ people().name.first }}
+    {{ people().name.last }}
+  </h3>
+        <ul>
+          <li>
+            <strong>Âge </strong>
+            <span>{{ people().dob.age }}</span>
+          </li>
+          <li>
+            <strong>Email </strong>
+            <span>{{ people().email }}</span>
+          </li>
+          <li>
+            <strong>Téléphone </strong>
+            <span>{{ people().phone }}</span>
+          </li>
+          <li>
+            <strong>Portable </strong>
+            <span>{{ people().cell }}</span>
+          </li>
+          <li>
+            <strong>Ville </strong>
+            <span>{{ people().location.city }}, {{ people().location.country }}</span>
+          </li>
+        </ul>
+</div>

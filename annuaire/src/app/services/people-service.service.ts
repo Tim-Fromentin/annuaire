@@ -11,6 +11,7 @@ export class PeopleService {
   readonly isLoading = signal<boolean>(true);
   readonly errorMessage = signal<string | null>(null);
   readonly peoples = signal<People[]>([]);
+  uuid = signal<string | undefined>(undefined);
 
   readonly count = computed(() => {
     return this.peoples().length;
@@ -28,6 +29,10 @@ export class PeopleService {
     } finally {
       this.isLoading.set(false);
     }
+  }
+
+  getByUuid(uuid: string): People | undefined {
+    return this.peoples().find((people) => people.login.uuid === uuid);
   }
 
   constructor() {

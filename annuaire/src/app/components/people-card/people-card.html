@@ -1,4 +1,4 @@
-<div class="people-card">
+<a [routerLink]="['/personnes', people().login.uuid]" class="people-card">
   <img [src]="people().picture.large" />
   <h3>
     {{ people().name.first }}
@@ -7,4 +7,4 @@
   <span>
     {{ people().location.city }}
   </span>
-</div>
+</a>

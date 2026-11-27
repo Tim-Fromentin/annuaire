@@ -1,0 +1,8 @@
+<section class="people-details">
+  <a routerLink=""><- Retour à l'annuaire</a>
+    @if (peopleDetail(); as people) {
+    <app-people-detail-card [people]="people" />
+  } @else {
+    <p>Cette personne n'existe pas.</p>
+  }
+</section>

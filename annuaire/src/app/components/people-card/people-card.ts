@@ -1,8 +1,9 @@
 import { Component, input } from '@angular/core';
 import { People } from '../../models/people.model';
+import { RouterLink } from '@angular/router';
 
 @Component({
-  imports: [],
+  imports: [RouterLink],
   selector: 'app-people-card',
   styleUrl: './people-card.css',
   templateUrl: './people-card.html',
